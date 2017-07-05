@@ -21,6 +21,7 @@ class GroupsController < ApplicationController
  else
    render :edit
  end
+ end
 
   def new
     @group = Group.new
@@ -39,7 +40,7 @@ class GroupsController < ApplicationController
 end
 
 def destroy
-  
+
 
   @group.destroy
   flash[:alert] = "Group deleted"
